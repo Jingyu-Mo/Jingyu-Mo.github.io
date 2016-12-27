@@ -45,17 +45,35 @@
   
 
   
+    
+      
+    
 
+    
   
 
+  
+    
+      
+    
+
+    
   
 
   
 
   
     
+      
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -90,7 +108,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/12/26/Markdown-Tutorial/index.html">
 <meta property="og:site_name" content="Jingyu-Mo'Blog">
 <meta property="og:description" content="Markdown 是一种兼顾可读性与易用性的轻量级标记语言,由约翰·格鲁伯（John Gruber）和亚伦·斯沃茨（Aaron Swartz）创建。它可以将文本转化为HTML。对于一些不常用的标记，Markdown 允许直接将HTML标记插入文本。">
-<meta property="og:updated_time" content="2016-12-26T15:26:49.197Z">
+<meta property="og:updated_time" content="2016-12-27T13:51:53.438Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown Tutorial">
 <meta name="twitter:description" content="Markdown 是一种兼顾可读性与易用性的轻量级标记语言,由约翰·格鲁伯（John Gruber）和亚伦·斯沃茨（Aaron Swartz）创建。它可以将文本转化为HTML。对于一些不常用的标记，Markdown 允许直接将HTML标记插入文本。">
@@ -346,7 +364,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;u&gt;Text,text,text （这是一段有下划线的文本）&lt;/u&gt;</div></pre></td></tr></table></figure>
 <p>输出效果： <u>Text,text,text （这是一段有下划线的文本）</u></p>
 <h3 id="文本删除线"><a href="#文本删除线" class="headerlink" title="文本删除线"></a>文本删除线</h3><p>文本删除线语法示例：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~~Text,text,text~</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~~Text,text,text~~</div></pre></td></tr></table></figure>
 <p>输出效果： <del>Text, text, text （这是一段删除的文本）</del></p>
 <hr>
 <h2 id="转义字符（Escape-character）"><a href="#转义字符（Escape-character）" class="headerlink" title="转义字符（Escape character）"></a>转义字符（Escape character）</h2><p>转义字符使用方法：</p>
@@ -388,7 +406,7 @@
 </blockquote>
 <hr>
 <h2 id="代码区块（Code-Block）"><a href="#代码区块（Code-Block）" class="headerlink" title="代码区块（Code Block）"></a>代码区块（Code Block）</h2><p>代码区块语法示例：</p>
-<pre><code> bash
+<pre><code>三个反引号 bash
 $ hexo clean
 $ hexo g
 $ hexo s
@@ -401,11 +419,54 @@ $ hexo s
 <h2 id="网页链接（Web-Links）"><a href="#网页链接（Web-Links）" class="headerlink" title="网页链接（Web Links）"></a>网页链接（Web Links）</h2><p>链接分为两种：行内式链接和参考式链接。</p>
 <p><strong>行内式链接（Inline Links）</strong></p>
 <p>行内式链接语法示例：</p>
-<p>输出效果：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Welcome to [Hexo](https://hexo.io/)</div></pre></td></tr></table></figure>
+<p>输出效果：Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a></p>
 <p><strong>参考式链接（Reference Links）</strong></p>
 <p>参考式链接语法示例：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">I get 10 <span class="built_in">times</span> more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].</div><div class="line">[1]: http://google.com/</div><div class="line">[2]: http://search.yahoo.com/</div><div class="line">[3]: http://search.msn.com/</div><div class="line">or</div><div class="line">I get 10 <span class="built_in">times</span> more traffic from [Google][] than from [Yahoo][] or [MSN][].</div><div class="line">[Google]: http://google.com/</div><div class="line">[Yahoo]: http://search.yahoo.com/</div><div class="line">[MSN]: http://search.msn.com/</div></pre></td></tr></table></figure>
 <p>输出效果： I get 10 times more traffic from <a href="http://google.com/" target="_blank" rel="external">Google</a> than from <a href="http://search.yahoo.com/" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" target="_blank" rel="external">MSN</a>.</p>
+<hr>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>表格语法示例</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">| Tables        | Are               | Cool    |</div><div class="line">| ------------- | :---------------: | ------: |</div><div class="line">| col 3 is      | right-aligned     | <span class="variable">$1600</span>   |</div><div class="line">| col 2 is      | centered          | <span class="variable">$12</span>     |</div><div class="line">| zebra stripes | are neat          | <span class="variable">$1</span>      |</div></pre></td></tr></table></figure>
+<p>输出效果：</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<p>第二行虚线两端的冒号设定所在列的文本对齐方式：</p>
+<ul>
+<li>两端无冒号，文本左对齐；</li>
+<li>两端有冒号，文本居中；</li>
+<li>右端有冒号，文本右对齐；</li>
+</ul>
+<hr>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<li><a href="http://www.ituring.com.cn/article/504" target="_blank" rel="external">http://www.ituring.com.cn/article/504</a></li>
+<li><a href="http://equation85.github.io/blog/markdown-examples/" target="_blank" rel="external">http://equation85.github.io/blog/markdown-examples/</a></li>
+<li><a href="http://www.jianshu.com/p/sTeAbC" target="_blank" rel="external">http://www.jianshu.com/p/sTeAbC</a></li>
+</ol>
 
       
     </div>
@@ -549,7 +610,7 @@ $ hexo s
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#标题-（Headlines）"><span class="nav-number">1.</span> <span class="nav-text">标题 （Headlines）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#段落-（Paragraph）"><span class="nav-number">2.</span> <span class="nav-text">段落 （Paragraph）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本格式-（Text-Format）"><span class="nav-number">3.</span> <span class="nav-text">文本格式 （Text Format）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#加粗"><span class="nav-number">3.1.</span> <span class="nav-text">加粗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#斜体"><span class="nav-number">3.2.</span> <span class="nav-text">斜体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加粗斜体"><span class="nav-number">3.3.</span> <span class="nav-text">加粗斜体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本下划线"><span class="nav-number">3.4.</span> <span class="nav-text">文本下划线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本删除线"><span class="nav-number">3.5.</span> <span class="nav-text">文本删除线</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转义字符（Escape-character）"><span class="nav-number">4.</span> <span class="nav-text">转义字符（Escape character）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表（List）"><span class="nav-number">5.</span> <span class="nav-text">列表（List）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区块引用（Blockquotes）"><span class="nav-number">6.</span> <span class="nav-text">区块引用（Blockquotes）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码区块（Code-Block）"><span class="nav-number">7.</span> <span class="nav-text">代码区块（Code Block）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网页链接（Web-Links）"><span class="nav-number">8.</span> <span class="nav-text">网页链接（Web Links）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#标题-（Headlines）"><span class="nav-number">1.</span> <span class="nav-text">标题 （Headlines）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#段落-（Paragraph）"><span class="nav-number">2.</span> <span class="nav-text">段落 （Paragraph）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本格式-（Text-Format）"><span class="nav-number">3.</span> <span class="nav-text">文本格式 （Text Format）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#加粗"><span class="nav-number">3.1.</span> <span class="nav-text">加粗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#斜体"><span class="nav-number">3.2.</span> <span class="nav-text">斜体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加粗斜体"><span class="nav-number">3.3.</span> <span class="nav-text">加粗斜体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本下划线"><span class="nav-number">3.4.</span> <span class="nav-text">文本下划线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本删除线"><span class="nav-number">3.5.</span> <span class="nav-text">文本删除线</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转义字符（Escape-character）"><span class="nav-number">4.</span> <span class="nav-text">转义字符（Escape character）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表（List）"><span class="nav-number">5.</span> <span class="nav-text">列表（List）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区块引用（Blockquotes）"><span class="nav-number">6.</span> <span class="nav-text">区块引用（Blockquotes）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码区块（Code-Block）"><span class="nav-number">7.</span> <span class="nav-text">代码区块（Code Block）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网页链接（Web-Links）"><span class="nav-number">8.</span> <span class="nav-text">网页链接（Web Links）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表格"><span class="nav-number">9.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">10.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
